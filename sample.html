@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login & Register</title>
+  <style>
+    :root {
+      --light-bg: #f0f0f0;
+    }
+
+    .user-account .flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .user-account .flex form {
+      flex: 1 1 40rem;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      background-color: var(--light-bg);
+    }
+
+    .box {
+      display: block;
+      width: 100%;
+      margin: 1rem 0;
+      padding: 0.8rem;
+      font-size: 1rem;
+    }
+
+    .btn {
+      padding: 0.8rem 1.2rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="user-account">
+    <div class="flex">
+      <!-- Login Form -->
+      <form method="post">
+        <h3>Login Now</h3>
+        <input type="email" name="email" class="box" placeholder="Enter your email" required minlength="10" maxlength="20">
+        <input type="password" name="password" class="box" placeholder="Enter your password" required minlength="10" maxlength="20">
+        <input type="submit" value="Login Now" name="login" class="btn">
+      </form>
+
+      <!-- Registration Form -->
+      <form method="post">
+        <h3>Register Now</h3>
+        <input type="text" name="name" class="box" placeholder="Enter your name" required minlength="10" maxlength="20">
+        <input type="email" name="email" class="box" placeholder="Enter your email" required minlength="10" maxlength="20">
+        <input type="password" name="password" class="box" placeholder="Enter your password" required minlength="10" maxlength="20">
+        <input type="submit" value="Register Now" name="register" class="btn">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
